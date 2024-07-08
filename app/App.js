@@ -8,8 +8,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 app.use(express.static('public'));
 
-app.get('/pharases', (req, res) => {
-    readFile(`${__dirname}/data/pharases.json`, 'utf-8', (err, data) => {
+app.get('/phrases', (req, res) => {
+    readFile(`${__dirname}/data/phrases.json`, 'utf-8', (err, data) => {
         if (err) {
             res.status(500).send('500 - Internal Server Error');
             return;
