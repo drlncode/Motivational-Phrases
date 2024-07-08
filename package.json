@@ -13,7 +13,7 @@
   "author": "Darlin Daniel Arias Méndez",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "4.19.2"
   },
   "devDependencies": {},
   "description": ""
