@@ -3,8 +3,8 @@
   "name": "motivational-pharases",
   "version": "1.0.0",
   "main": "index.js",
-  "engines": {
-    "node": "22.x"
+  "engines": { 
+    "node": "20.x" 
   },
   "scripts": {
     "build": "node ./index.js",
