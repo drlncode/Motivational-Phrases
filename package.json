@@ -7,7 +7,7 @@
     "node": "22.x"
   },
   "scripts": {
-    "start": "node ./index.js",
+    "build": "node ./index.js",
     "dev": "node --watch ./index.js"
   },
   "keywords": [
