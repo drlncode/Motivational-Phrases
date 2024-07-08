@@ -1,13 +1,16 @@
 import express from 'express';
 import { readFile } from 'node:fs/promises';
-import { dirname } from 'node:path';
+import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const app = express();
-const __dirname = dirname(fileURLToPath(import.meta.url));
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-    app.use(express.static('public'));
+    const indexFile = path.join(__dirname, '../public', 'index.html');
+    res.sendFile(indexFile);
 });
 
 app.get('/phrases', async (req, res) => {
