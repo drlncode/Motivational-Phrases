@@ -1,0 +1,20 @@
+{
+  "name": "motivational-pharases",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch ./app/App.js"
+  },
+  "keywords": [
+    "api",
+    "pharases",
+    "motivational"
+  ],
+  "author": "Darlin Daniel Arias Méndez",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {},
+  "description": ""
+}
