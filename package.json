@@ -1,9 +1,10 @@
 {
+  "type": "module",
   "name": "motivational-pharases",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "node --watch ./app/App.js"
+    "dev": "node --watch index.js"
   },
   "keywords": [
     "api",
