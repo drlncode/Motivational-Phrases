@@ -10,12 +10,16 @@
     const topauseButton = document.querySelector('.controls');
 
     let numPhrases = phrases.length - 1;
-    let actualPhrase = 0;
+    let actualPhrase;
     let progress = 0;
     let pending = false;
     let paused = false;
     let processBar = document.querySelector('.process');
     let showPhrase = document.querySelector('.text');
+    let results = [];
+
+    // Generating the phrase index to show.
+    updatePhrase();
 
     // Detecting the device to change the pause button type.
     deviceButton();
@@ -93,13 +97,33 @@
         }
     }
 
+    /**
+     * Small algorithm to generate a different phrase and make sure it is
+     * not repeated unless all of them have already been generated.
+     */
     function updatePhrase() {
-        if (actualPhrase == numPhrases) {
-            actualPhrase = 0;
-            return;
+        if (results.length === numPhrases) {
+            results = [];
         }
+    
+        let random;
+        do {
+            random = Math.floor(Math.random() * numPhrases);
+        } while (results.includes(random));
+    
+        results.push(random);
+        actualPhrase = random;
+        console.log(actualPhrase);
 
-        actualPhrase++;
+        // Old linear operation:
+        //
+        // if (actualPhrase == numPhrases) {
+        //     actualPhrase = 0;
+        //     return;
+        // }
+        //
+        // actualPhrase++;
+        //
     }
 
     function deviceButton(e) {
@@ -120,9 +144,9 @@
             Play</p>
         `;
 
-        if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || 
-            navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || 
-            navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || 
+        if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) ||
+            navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) ||
+            navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) ||
             navigator.userAgent.match(/Windows Phone/i)) {
             topauseButton.innerHTML = mobilePauseButtonContent;
 
