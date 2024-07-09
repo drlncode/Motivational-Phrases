@@ -1,7 +1,52 @@
 [
     {
         "id": 1,
-        "pharase_english": "pending",
-        "pharase_spanish": "pendiente"
+        "pharase_english": "Believe in yourself.",
+        "pharase_spanish": "Cree en ti mismo."
+    },
+    {
+        "id": 2,
+        "pharase_english": "The only limit is your mind.",
+        "pharase_spanish": "El único límite es tu mente."
+    },
+    {
+        "id": 3,
+        "pharase_english": "You are capable of amazing things.",
+        "pharase_spanish": "Eres capaz de cosas increíbles."
+    },
+    {
+        "id": 4,
+        "pharase_english": "Dream big and dare to fail.",
+        "pharase_spanish": "Sueña en grande y atrévete a fallar."
+    },
+    {
+        "id": 5,
+        "pharase_english": "Don't stop until you're proud.",
+        "pharase_spanish": "No te detengas hasta que estés orgulloso."
+    },
+    {
+        "id": 6,
+        "pharase_english": "Stay positive, work hard, make it happen.",
+        "pharase_spanish": "Mantente positivo, trabaja duro, haz que suceda."
+    },
+    {
+        "id": 7,
+        "pharase_english": "Your only limit is you.",
+        "pharase_spanish": "Tu único límite eres tú."
+    },
+    {
+        "id": 8,
+        "pharase_english": "Every day is a second chance.",
+        "pharase_spanish": "Cada día es una segunda oportunidad."
+    },
+    {
+        "id": 9,
+        "pharase_english": "Success is not for the lazy.",
+        "pharase_spanish": "El éxito no es para los perezosos."
+    },
+    {
+        "id": 10,
+        "pharase_english": "Don't wait for opportunity. Create it.",
+        "pharase_spanish": "No esperes la oportunidad. Créala"
     }
 ]
