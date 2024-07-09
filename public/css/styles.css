@@ -175,12 +175,14 @@
                     svg {
                         transition: all ease-in-out var(--transition-time);
                     }
+                }
 
-                    &:hover {
+                &:has(.pc-content) {
+                    p:hover {
                         background-color: #d3cccc;
                         color: #4907b3;
                         box-shadow: 1px 1px 6px -2px #d3cccc;
-
+    
                         svg {
                             stroke: #4907b3;
                         }
