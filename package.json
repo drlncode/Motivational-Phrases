@@ -1,6 +1,7 @@
 {
   "type": "module",
   "name": "motivational-pharases",
+  "description": "Simple app to generate motivational phrases from a local Mini-API made with Express.js.",
   "version": "1.0.0",
   "main": "index.js",
   "engines": { 
@@ -20,6 +21,5 @@
   "dependencies": {
     "express": "4.19.2"
   },
-  "devDependencies": {},
-  "description": ""
+  "devDependencies": {}
 }
