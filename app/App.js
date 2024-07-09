@@ -12,6 +12,8 @@ app.get('/', (req, res) => {
 });
 
 app.get('/phrases', async (req, res) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+
     try {
         const data = await readFile(`${__dirname}/data/phrases.json`, 'utf-8');
         res.setHeader('Content-Type', 'application/json');

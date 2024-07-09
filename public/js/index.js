@@ -7,6 +7,7 @@
             return data;
         })
         .catch(err => console.log(err));
+    const topauseButton = document.querySelector('.controls');
 
     let numPhrases = phrases.length - 1;
     let actualPhrase = 0;
@@ -15,6 +16,8 @@
     let paused = false;
     let processBar = document.querySelector('.process');
     let showPhrase = document.querySelector('.text');
+
+    deviceButton();
 
     if (!localStorage.getItem('lang')) {
         localStorage.setItem('lang', 'english');
@@ -47,6 +50,8 @@
             }, 50);
         }, 100);
     });
+
+    topauseButton.addEventListener('click', deviceButton);
 
     changeLangBtn.addEventListener('click', changeLang);
 
@@ -87,5 +92,43 @@
         }
 
         actualPhrase++;
+    }
+
+    function deviceButton(e) {
+        const pcPauseButtonContent = topauseButton.innerHTML;
+        const mobilePauseButtonContent = `
+            <p> <svg xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"
+                fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-player-pause">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 4h-2a2 2 0 0 0 -2 2v12a2
+                2 0 0 0 2 2h2a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2z" /><path d="M17 4h-2a2 2 0 0 0 -2
+                2v12a2 2 0 0 0 2 2h2a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2z" /></svg>
+            Pause</p>
+        `;
+        const mobilePlayButtonContent = `
+            <p> <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"
+                fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-player-play">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 4v16a1 1 0 0 0 1.524 .852l13
+                -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z" /></svg>
+            Play</p>
+        `;
+
+        if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || 
+            navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || 
+            navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || 
+            navigator.userAgent.match(/Windows Phone/i)) {
+            topauseButton.innerHTML = mobilePauseButtonContent;
+
+            if (e) {
+                if (topauseButton.classList.contains('paused')) {
+                    paused = false;
+                    topauseButton.classList.remove('paused');
+                    topauseButton.innerHTML = mobilePauseButtonContent;
+                } else {
+                    paused = true;
+                    topauseButton.classList.add('paused');
+                    topauseButton.innerHTML = mobilePlayButtonContent;
+                }
+            }
+        }
     }
 })();
