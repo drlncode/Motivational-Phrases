@@ -17,12 +17,15 @@
     let processBar = document.querySelector('.process');
     let showPhrase = document.querySelector('.text');
 
+    // Detecting the device to change the pause button type.
     deviceButton();
 
+    // Setting de phrase lenguage.
     if (!localStorage.getItem('lang')) {
         localStorage.setItem('lang', 'english');
     }
 
+    // Here the magic happens, changing the current phrase and updating the process bar to change it.
     window.addEventListener('load', () => {
         setTimeout(() => {
             nextPhrase();
@@ -35,6 +38,7 @@
 
                 processBar.style.width = `${progress}%`;
 
+                // I think it goes without saying that almost how this works depends on the progress variable.
                 if (progress === 100) {
                     showPhrase.classList.remove('show');
                     progress = 0;
@@ -51,10 +55,13 @@
         }, 100);
     });
 
+    // Event listener for mobile button.
     topauseButton.addEventListener('click', deviceButton);
 
+    // Change the lang.
     changeLangBtn.addEventListener('click', changeLang);
 
+    // Event listeners for pc "button".
     document.addEventListener('keydown', (e) => {
         if (e.key === 's') {
             paused = true;
@@ -67,6 +74,7 @@
         }
     });
 
+    // The ones that allow everything to happen, are nothing out of this world.
     function changeLang() {
         if (localStorage.getItem('lang') === 'english') {
             localStorage.setItem('lang', 'spanish');
