@@ -26,7 +26,7 @@ npm install or pnpm install
 
 # Usage
 
-### 1. run the next command:
+### 1. Run the next command:
 
 ```bash
 npm run dev
