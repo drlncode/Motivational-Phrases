@@ -48,5 +48,105 @@
         "id": 10,
         "pharase_english": "Don't wait for opportunity. Create it.",
         "pharase_spanish": "No esperes la oportunidad. Créala"
+    },
+    {
+        "id": 11,
+        "pharase_english": "Believe you can and you're halfway there.",
+        "pharase_spanish": "Cree que puedes y ya estás a mitad de camino."
+    },
+    {
+        "id": 12,
+        "pharase_english": "Work hard in silence, let your success be your noise.",
+        "pharase_spanish": "Trabaja duro en silencio, deja que tu éxito sea tu ruido."
+    },
+    {
+        "id": 13,
+        "pharase_english": "You are stronger than you think.",
+        "pharase_spanish": "Eres más fuerte de lo que piensas."
+    },
+    {
+        "id": 14,
+        "pharase_english": "Push yourself because no one else is going to do it for you.",
+        "pharase_spanish": "Esfuérzate porque nadie más lo hará por ti."
+    },
+    {
+        "id": 15,
+        "pharase_english": "Don't quit. Suffer now and live the rest of your life as a champion.",
+        "pharase_spanish": "No te rindas. Sufre ahora y vive el resto de tu vida como un campeón."
+    },
+    {
+        "id": 16,
+        "pharase_english": "Difficult roads often lead to beautiful destinations.",
+        "pharase_spanish": "Los caminos difíciles a menudo conducen a destinos hermosos."
+    },
+    {
+        "id": 17,
+        "pharase_english": "Stay humble, work hard, be kind.",
+        "pharase_spanish": "Mantente humilde, trabaja duro, sé amable."
+    },
+    {
+        "id": 18,
+        "pharase_english": "Success doesn't come from what you do occasionally, it comes from what you do consistently.",
+        "pharase_spanish": "El éxito no viene de lo que haces ocasionalmente, viene de lo que haces constantemente."
+    },
+    {
+        "id": 19,
+        "pharase_english": "The harder you work for something, the greater you'll feel when you achieve it.",
+        "pharase_spanish": "Cuanto más trabajes por algo, mejor te sentirás cuando lo logres."
+    },
+    {
+        "id": 20,
+        "pharase_english": "Small steps every day.",
+        "pharase_spanish": "Pequeños pasos todos los días."
+    },
+    {
+        "id": 21,
+        "pharase_english": "Great things never came from comfort zones.",
+        "pharase_spanish": "Las grandes cosas nunca vienen de las zonas de confort."
+    },
+    {
+        "id": 22,
+        "pharase_english": "Believe in the magic of beginnings.",
+        "pharase_spanish": "Cree en la magia de los comienzos."
+    },
+    {
+        "id": 23,
+        "pharase_english": "Be fearless in the pursuit of what sets your soul on fire.",
+        "pharase_spanish": "Sé valiente en la búsqueda de lo que enciende tu alma."
+    },
+    {
+        "id": 24,
+        "pharase_english": "Make today count.",
+        "pharase_spanish": "Haz que hoy valga la pena."
+    },
+    {
+        "id": 25,
+        "pharase_english": "Be the energy you want to attract.",
+        "pharase_spanish": "Sé la energía que quieres atraer."
+    },
+    {
+        "id": 26,
+        "pharase_english": "Dream it. Believe it. Build it.",
+        "pharase_spanish": "Sueña. Cree. Construye."
+    },
+    {
+        "id": 27,
+        "pharase_english": "Your potential is endless.",
+        "pharase_spanish": "Tu potencial es infinito."
+    },
+    {
+        "id": 28,
+        "pharase_english": "Good things take time.",
+        "pharase_spanish": "Las cosas buenas llevan tiempo."
+    },
+    {
+        "id": 29,
+        "pharase_english": "Success is not the key to happiness. Happiness is the key to success.",
+        "pharase_spanish": "El éxito no es la clave de la felicidad. La felicidad es la clave del éxito."
+    },
+    {
+        "id": 30,
+        "pharase_english": "The best way to predict the future is to create it.",
+        "pharase_spanish": "La mejor manera de predecir el futuro es crearlo."
     }
 ]
