@@ -34,6 +34,25 @@ npm run dev
 
 - Before that, enter to: _localhost:3000._
 
+# API 
+
+- The API is a very simple API-JSON that only consists of one route, which is: ``https://motivational-phrases-umber.vercel.app/phrases``.
+
+### 1. Make a request to the API.
+
+- To make a request to the API and then consume it, do the following:
+
+```javascript
+const URL = 'https://motivational-phrases-umber.vercel.app/phrases';
+
+fetch(URL)
+    .then(response => response.json())
+    .then(json => {
+        // Whatever you're going to do to consume it.
+    })
+    .catch(err => console.error);
+```
+
 # Contribute
 
 - Feel free to make any contribution to the project, whether it's adding a feature to the project or adding phrases to the json in ``app/data/phrases.json``. Everything is welcome.
