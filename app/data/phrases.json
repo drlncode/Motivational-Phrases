@@ -148,5 +148,105 @@
         "id": 30,
         "pharase_english": "The best way to predict the future is to create it.",
         "pharase_spanish": "La mejor manera de predecir el futuro es crearlo."
+    },
+    {
+        "id": 31,
+        "pharase_english": "The only way to do great work is to love what you do.",
+        "pharase_spanish": "La única manera de hacer un gran trabajo es amar lo que haces."
+    },
+    {
+        "id": 32,
+        "pharase_english": "You are capable of more than you know.",
+        "pharase_spanish": "Eres capaz de más de lo que sabes."
+    },
+    {
+        "id": 33,
+        "pharase_english": "Believe in your dreams. They were given to you for a reason.",
+        "pharase_spanish": "Cree en tus sueños. Te fueron dados por una razón."
+    },
+    {
+        "id": 34,
+        "pharase_english": "Don't be pushed around by the fears in your mind. Be led by the dreams in your heart.",
+        "pharase_spanish": "No te dejes llevar por los miedos en tu mente. Déjate guiar por los sueños en tu corazón."
+    },
+    {
+        "id": 35,
+        "pharase_english": "The future depends on what you do today.",
+        "pharase_spanish": "El futuro depende de lo que hagas hoy."
+    },
+    {
+        "id": 36,
+        "pharase_english": "Success is not how high you have climbed, but how you make a positive difference to the world.",
+        "pharase_spanish": "El éxito no es cuán alto has escalado, sino cómo haces una diferencia positiva en el mundo."
+    },
+    {
+        "id": 37,
+        "pharase_english": "Your life is your story. Write well. Edit often.",
+        "pharase_spanish": "Tu vida es tu historia. Escribe bien. Edita a menudo."
+    },
+    {
+        "id": 38,
+        "pharase_english": "Do what you love, love what you do.",
+        "pharase_spanish": "Haz lo que amas, ama lo que haces."
+    },
+    {
+        "id": 39,
+        "pharase_english": "Success is the sum of small efforts, repeated day in and day out.",
+        "pharase_spanish": "El éxito es la suma de pequeños esfuerzos, repetidos día tras día."
+    },
+    {
+        "id": 40,
+        "pharase_english": "Be yourself; everyone else is already taken.",
+        "pharase_spanish": "Sé tú mismo; todos los demás ya están ocupados."
+    },
+    {
+        "id": 41,
+        "pharase_english": "Don't count the days, make the days count.",
+        "pharase_spanish": "No cuentes los días, haz que los días cuenten."
+    },
+    {
+        "id": 42,
+        "pharase_english": "The secret of getting ahead is getting started.",
+        "pharase_spanish": "El secreto de avanzar es comenzar."
+    },
+    {
+        "id": 43,
+        "pharase_english": "Life is 10% what happens to us and 90% how we react to it.",
+        "pharase_spanish": "La vida es 10% lo que nos sucede y 90% cómo reaccionamos a ello."
+    },
+    {
+        "id": 44,
+        "pharase_english": "Keep going. Everything you need will come to you at the perfect time.",
+        "pharase_spanish": "Sigue adelante. Todo lo que necesitas llegará a ti en el momento perfecto."
+    },
+    {
+        "id": 45,
+        "pharase_english": "Don't wait for the perfect moment. Take the moment and make it perfect.",
+        "pharase_spanish": "No esperes el momento perfecto. Toma el momento y hazlo perfecto."
+    },
+    {
+        "id": 46,
+        "pharase_english": "You are amazing. Remember that.",
+        "pharase_spanish": "Eres increíble. Recuerda eso."
+    },
+    {
+        "id": 47,
+        "pharase_english": "Do something today that your future self will thank you for.",
+        "pharase_spanish": "Haz algo hoy que tu futuro yo te agradecerá."
+    },
+    {
+        "id": 48,
+        "pharase_english": "Don't watch the clock; do what it does. Keep going.",
+        "pharase_spanish": "No mires el reloj; haz lo que hace. Sigue adelante."
+    },
+    {
+        "id": 49,
+        "pharase_english": "Dream big, work hard, stay focused, and surround yourself with good people.",
+        "pharase_spanish": "Sueña en grande, trabaja duro, mantente enfocado y rodéate de buenas personas."
+    },
+    {
+        "id": 50,
+        "pharase_english": "The best time for new beginnings is now.",
+        "pharase_spanish": "El mejor momento para nuevos comienzos es ahora."
     }
 ]
