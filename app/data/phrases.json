@@ -248,5 +248,65 @@
         "id": 50,
         "pharase_english": "The best time for new beginnings is now.",
         "pharase_spanish": "El mejor momento para nuevos comienzos es ahora."
+    },
+    {
+        "id": 51,
+        "pharase_english": "You are braver than you believe, stronger than you seem, and smarter than you think.",
+        "pharase_spanish": "Eres más valiente de lo que crees, más fuerte de lo que pareces y más inteligente de lo que piensas."
+    },
+    {
+        "id": 52,
+        "pharase_english": "Don't tell people your plans. Show them your results.",
+        "pharase_spanish": "No les cuentes a las personas tus planes. Muéstrales tus resultados."
+    },
+    {
+        "id": 53,
+        "pharase_english": "Work on yourself and vibe alone for a while.",
+        "pharase_spanish": "Trabaja en ti mismo y vibra solo por un tiempo."
+    },
+    {
+        "id": 54,
+        "pharase_english": "Don't you dare give up.",
+        "pharase_spanish": "Ni se te ocurra rendirte."
+    },
+    {
+        "id": 55,
+        "pharase_english": "Focus on the step infront of you, not the whole staircase.",
+        "pharase_spanish": "Concéntrate en el escalón que tienes delante, no en toda la escalera."
+    },
+    {
+        "id": 56,
+        "pharase_english": "If your dreams don't scare you, they are not big enough.",
+        "pharase_spanish": "Si tus sueños no te asustan, no son lo suficientemente grandes."
+    },
+    {
+        "id": 57,
+        "pharase_english": "Hard times may have held you down, but they will not last forever.",
+        "pharase_spanish": "Los tiempos difíciles pueden haberte frenado, pero no durarán para siempre."
+    },
+    {
+        "id": 58,
+        "pharase_english": "The only limit to our realization of tomorrow is our doubts of today.",
+        "pharase_spanish": "El único límite para la realización del mañana son nuestras dudas de hoy."
+    },
+    {
+        "id": 59,
+        "pharase_english": "Believe in yourself and all that you are.",
+        "pharase_spanish": "Cree en ti mismo y en todo lo que eres."
+    },
+    {
+        "id": 60,
+        "pharase_english": "Start where you are. Use what you have. Do what you can.",
+        "pharase_spanish": "Comienza donde estás. Usa lo que tienes. Haz lo que puedas."
+    },
+    {
+        "id": 61,
+        "pharase_english": "The future belongs to those who believe in the beauty of their dreams.",
+        "pharase_spanish": "El futuro pertenece a aquellos que creen en la belleza de sus sueños."
+    },
+    {
+        "id": 62,
+        "pharase_english": "Dreams don't work unless you do.",
+        "pharase_spanish": "Los sueños no funcionan a menos que tú lo hagas."
     }
 ]
