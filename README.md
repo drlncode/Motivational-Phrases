@@ -36,7 +36,7 @@ npm run dev
 
 # API 
 
-- The API is a very simple API-JSON that only consists of one route, which is: ``https://motivational-phrases-umber.vercel.app/phrases``.
+- The API is a very simple API-JSON that only consists of one route, which is: ``https://motivational-phrases-demo.vercel.app/phrases``.
 
 ### 1. Make a request to the API.
 
