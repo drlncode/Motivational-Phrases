@@ -32,7 +32,7 @@ npm install or pnpm install
 npm run dev
 ```
 
-- Before that, enter to: _localhost:3000._
+- Before that, enter to: _http://localhost:3000._
 
 # API 
 
