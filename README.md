@@ -43,7 +43,7 @@ npm run dev
 - To make a request to the API and then consume it, do the following:
 
 ```javascript
-const URL = 'https://motivational-phrases-umber.vercel.app/phrases';
+const URL = 'https://https://motivational-phrases-demo.vercel.app/phrases';
 
 fetch(URL)
     .then(response => response.json())
