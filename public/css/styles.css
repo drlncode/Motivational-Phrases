@@ -218,7 +218,25 @@
 }
 
 @media screen and (max-width: 640px) {
-    .container-phrase {
-        width: 100% !important;
+    main {
+        height: 95vh !important;
+
+        .container-phrase {
+            width: 100% !important;
+    
+            .content-phrase {
+                width: 80% !important;
+    
+                .phrase {
+                    .translation {
+                        right: 5% !important;
+                    }
+    
+                    .text {
+                        font-size: 1.25em !important;
+                    }
+                }
+            }
+        }
     }
 }
