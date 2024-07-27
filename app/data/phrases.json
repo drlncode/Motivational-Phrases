@@ -373,5 +373,30 @@
         "id": 75,
         "pharase_english": "Believe in yourself and all that you are.",
         "pharase_spanish": "Cree en ti mismo y en todo lo que eres."
+    },
+    {
+        "id": 76,
+        "pharase_english": "All our dreams can come true, if we have the courage to pursue them.",
+        "pharase_spanish": "Todos nuestros sueños pueden hacerse realidad, si tenemos el valor de perseguirlos."
+    },
+    {
+        "id": 77,
+        "pharase_english": "Champions keep playing until they get it right.",
+        "pharase_spanish": "Los campeones siguen jugando hasta que lo consiguen."
+    },
+    {
+        "id": 78,
+        "pharase_english": "All dreams are within reach. All you have to do is keep moving towards them.",
+        "pharase_spanish": "Todos los sueños están al alcance de la mano. Todo lo que tienes que hacer es seguir avanzando hacia ellos."
+    },
+    {
+        "id": 79,
+        "pharase_english": "It always seems impossible until it's done.",
+        "pharase_spanish": "Siempre parece imposible hasta que se hace."
+    },
+    {
+        "id": 80,
+        "pharase_english": "If you risk nothing, then you risk everything.",
+        "pharase_spanish": "Si no arriesgas nada, lo arriesgas todo."
     }
 ]
