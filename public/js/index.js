@@ -1,21 +1,20 @@
 (async () => {
-    const changeLangBtn = document.querySelector('.translation');
     const URL = '../phrases';
     const phrases = await fetch(URL)
         .then(response => response.json())
-        .then(data => {
-            return data;
-        })
+        .then(data => data)
         .catch(err => console.log(err));
+
+    const changeLangBtn = document.querySelector('.translation');
     const topauseButton = document.querySelector('.controls');
+    const processBar = document.querySelector('.process');
+    const showPhrase = document.querySelector('.text');
 
     let numPhrases = phrases.length - 1;
     let actualPhrase;
     let progress = 0;
     let pending = false;
     let paused = false;
-    let processBar = document.querySelector('.process');
-    let showPhrase = document.querySelector('.text');
     let results = [];
 
     // Generating the phrase index to show.
