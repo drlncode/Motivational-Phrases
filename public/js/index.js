@@ -9,12 +9,12 @@ const showPhrase = document.querySelector('.text');
 const URL = 'https://motivational-phrases-demo.vercel.app/phrases';
 const { data: phrases } = await getPhrases({ url: URL });
 
-let numPhrases = phrases.length - 1;
-let actualPhrase;
-let progress = 0;
-let pending = false;
-let paused = false;
-let results = [];
+let realPhrasesArrayIndexes = phrases.length - 1;
+let actualPhrase = '';
+let progressBarPorcent = 0;
+let changeIsPending = false;
+let progressBarIsPaused = false;
+let seenPhrases = [];
 
 // Generating the phrase index to show.
 updatePhrase();
@@ -34,23 +34,23 @@ window.addEventListener('load', () => {
         showPhrase.classList.add('show');
 
         setInterval(() => {
-            if (!pending && !paused) {
-                progress++;
+            if (!changeIsPending && !progressBarIsPaused) {
+                progressBarPorcent++;
             }
 
-            processBar.style.width = `${progress}%`;
+            processBar.style.width = `${progressBarPorcent}%`;
 
-            // I think it goes without saying that almost how this works depends on the progress variable.
-            if (progress === 100) {
+            // I think it goes without saying that almost how this works depends on the progressBarPorcent variable.
+            if (progressBarPorcent === 100) {
                 showPhrase.classList.remove('show');
-                progress = 0;
-                pending = true;
+                progressBarPorcent = 0;
+                changeIsPending = true;
 
                 setTimeout(() => {
                     updatePhrase();
                     nextPhrase();
                     showPhrase.classList.add('show');
-                    pending = false;
+                    changeIsPending = false;
                 }, 1000);
             }
         }, 50);
@@ -66,13 +66,13 @@ changeLangBtn.addEventListener('click', changeLang);
 // Event listeners for pc "button".
 document.addEventListener('keydown', (e) => {
     if (e.key === 's') {
-        paused = true;
+        progressBarIsPaused = true;
     }
 });
 
 document.addEventListener('keyup', (e) => {
     if (e.key === 's') {
-        paused = false;
+        progressBarIsPaused = false;
     }
 });
 
@@ -100,21 +100,21 @@ function nextPhrase() {
  * not repeated unless all of them have already been generated.
  */
 function updatePhrase() {
-    if (results.length === numPhrases) {
-        results = [];
+    if (seenPhrases.length === realPhrasesArrayIndexes) {
+        seenPhrases = [];
     }
 
     let random;
     do {
-        random = Math.floor(Math.random() * numPhrases);
-    } while (results.includes(random));
+        random = Math.floor(Math.random() * realPhrasesArrayIndexes);
+    } while (seenPhrases.includes(random));
 
-    results.push(random);
+    seenPhrases.push(random);
     actualPhrase = random;
 
     // Old linear operation:
     //
-    // if (actualPhrase == numPhrases) {
+    // if (actualPhrase == realPhrasesArrayIndexes) {
     //     actualPhrase = 0;
     //     return;
     // }
@@ -124,8 +124,6 @@ function updatePhrase() {
 }
 
 function deviceButton(e) {
-    
-
     if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) ||
         navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) ||
         navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) ||
@@ -133,13 +131,13 @@ function deviceButton(e) {
         topauseButton.innerHTML = mobilePauseButtonContent;
 
         if (e) {
-            if (topauseButton.classList.contains('paused')) {
-                paused = false;
-                topauseButton.classList.remove('paused');
+            if (topauseButton.classList.contains('progressBarIsPaused')) {
+                progressBarIsPaused = false;
+                topauseButton.classList.remove('progressBarIsPaused');
                 topauseButton.innerHTML = mobilePauseButtonContent;
             } else {
-                paused = true;
-                topauseButton.classList.add('paused');
+                progressBarIsPaused = true;
+                topauseButton.classList.add('progressBarIsPaused');
                 topauseButton.innerHTML = mobilePlayButtonContent;
             }
         }
