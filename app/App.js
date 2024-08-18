@@ -1,5 +1,5 @@
 import express from 'express';
-import { readFile } from 'node:fs/promises';
+import { readFile, access, constants } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -25,22 +25,32 @@ app.get('/phrases', async (req, res) => {
 });
 
 // app.use(express.static()) dont work in production, idk why.
-app.get('/public/js/:file', (req, res, next) => {
-    const { file } = req.params;
-    const filePath = path.join(__dirname, '../public/js', file);
-    
-    res.sendFile(filePath, (err) => {
-        if (err) res.status(404).send('404 Not Found.');
-    });
-}); 
+app.get('/public/:folder/:file', async (req, res, next) => {
+    const { folder, file } = req.params;
+    const filePath = path.join(__dirname, `../public/${folder}`, file);
 
-app.get('/public/css/:file', (req, res) => {
-    const { file } = req.params;
-    const filePath = path.join(__dirname, '../public/css', file);
-    
-    res.sendFile(filePath, (err) => {
-        if (err) res.status(404).send('404 Not Found.');
-    });
+    try {
+        const result = await access(filePath, constants.F_OK);
+        res.sendFile(filePath);
+    } catch (e) {
+        if (e) {
+            next(e);
+        }
+    }
+});
+
+app.get('/public/:folder/:subfolder/:file', async (req, res, next) => {
+    const { folder, subfolder, file } = req.params;
+    const filePath = path.join(__dirname, `../public/${folder}/${subfolder}`, file);
+
+    try {
+        const result = await access(filePath, constants.F_OK);
+        res.sendFile(filePath);
+    } catch (e) {
+        if (e) {
+            next(e);
+        }
+    }
 });
 
 app.use((req, res) => {
