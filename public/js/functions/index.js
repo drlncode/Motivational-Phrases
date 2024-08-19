@@ -19,7 +19,9 @@ export function changePhraseAndManageProgressBar() {
 
         constants.processBar.style.width = `${variables.progressBarPorcent}%`;
 
-        // I think it goes without saying that almost how this works depends on the variables.progressBarPorcent variable.
+        // I think it goes without saying that almost how this works depends on the
+        // variables.progressBarPorcent variable.
+        
         if (variables.progressBarPorcent === 100) {
             constants.showPhrase.classList.remove('show');
             variables.progressBarPorcent = 0;
@@ -95,17 +97,17 @@ export function deviceButton(e) {
         navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) ||
         navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) ||
         navigator.userAgent.match(/Windows Phone/i)) {
-        constants.topauseButton.innerHTML = mobilePauseButtonContent;
+        constants.toPauseBtn.innerHTML = mobilePauseButtonContent;
 
         if (e) {
-            if (constants.topauseButton.classList.contains('variables.progressBarIsPaused')) {
+            if (constants.toPauseBtn.classList.contains('variables.progressBarIsPaused')) {
                 variables.progressBarIsPaused = false;
-                constants.topauseButton.classList.remove('variables.progressBarIsPaused');
-                constants.topauseButton.innerHTML = mobilePauseButtonContent;
+                constants.toPauseBtn.classList.remove('variables.progressBarIsPaused');
+                constants.toPauseBtn.innerHTML = mobilePauseButtonContent;
             } else {
                 variables.progressBarIsPaused = true;
-                constants.topauseButton.classList.add('variables.progressBarIsPaused');
-                constants.topauseButton.innerHTML = mobilePlayButtonContent;
+                constants.toPauseBtn.classList.add('variables.progressBarIsPaused');
+                constants.toPauseBtn.innerHTML = mobilePlayButtonContent;
             }
         }
     }

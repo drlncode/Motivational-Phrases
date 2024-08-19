@@ -1,7 +1,7 @@
 import { getPhrases } from '../services/getPhrases.js';
 
 export const changeLangBtn = document.querySelector('.translation');
-export const topauseButton = document.querySelector('.controls');
+export const toPauseBtn = document.querySelector('.controls');
 export const processBar = document.querySelector('.process');
 export const showPhrase = document.querySelector('.text');
 
@@ -10,7 +10,7 @@ export const { data: phrases } = await getPhrases({ url: URL });
 
 export default {
     changeLangBtn,
-    topauseButton,
+    toPauseBtn,
     processBar,
     showPhrase,
     phrases
