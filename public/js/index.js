@@ -19,7 +19,7 @@ window.addEventListener('load', () => {
 });
 
 // Event listener for mobile button.
-constants.topauseButton.addEventListener('click', functions.deviceButton);
+constants.toPauseBtn.addEventListener('click', functions.deviceButton);
 
 // Change the lang.
 constants.changeLangBtn.addEventListener('click', functions.changeLang);
