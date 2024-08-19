@@ -100,13 +100,13 @@ export function deviceButton(e) {
         constants.toPauseBtn.innerHTML = mobilePauseButtonContent;
 
         if (e) {
-            if (constants.toPauseBtn.classList.contains('variables.progressBarIsPaused')) {
+            if (constants.toPauseBtn.classList.contains('paused')) {
                 variables.progressBarIsPaused = false;
-                constants.toPauseBtn.classList.remove('variables.progressBarIsPaused');
+                constants.toPauseBtn.classList.remove('paused');
                 constants.toPauseBtn.innerHTML = mobilePauseButtonContent;
             } else {
                 variables.progressBarIsPaused = true;
-                constants.toPauseBtn.classList.add('variables.progressBarIsPaused');
+                constants.toPauseBtn.classList.add('paused');
                 constants.toPauseBtn.innerHTML = mobilePlayButtonContent;
             }
         }
