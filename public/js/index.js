@@ -1,14 +1,14 @@
 import constants from './definitions/constants.js';
 import functions from './functions/index.js';
 
-// Generating the phrase index to show.
-functions.updatePhrase();
+// Setting the phrase lenguage.
+functions.setLang();
 
 // Detecting the device to change the pause button type.
 functions.deviceButton();
 
-// Setting the phrase lenguage.
-functions.setLang();
+// Generating the phrase index to show.
+functions.updatePhrase();
 
 // Here the magic happens, changing the current phrase and updating the process bar to change it.
 window.addEventListener('load', () => {
