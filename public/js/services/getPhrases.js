@@ -1,17 +1,17 @@
 export const getPhrases = async ({ url }) => {
-    let reuslt = {};
+    let result = {};
 
     try {
         const response = await fetch(url);
         const phrases = await response.json();
 
-        reuslt = {
+        result = {
             success: true,
             data: phrases
         };
     } catch (e) {
         if (e) {
-            reuslt = {
+            result = {
                 success: false,
                 data: null
             };
@@ -20,5 +20,5 @@ export const getPhrases = async ({ url }) => {
         }
     }
 
-    return reuslt;
+    return result;
 }
