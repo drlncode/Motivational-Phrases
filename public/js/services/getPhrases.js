@@ -11,11 +11,12 @@ export const getPhrases = async ({ url }) => {
         };
     } catch (e) {
         if (e) {
-            console.log(reuslt);
-
             reuslt = {
-                success: false
+                success: false,
+                data: null
             };
+
+            return result;
         }
     }
 
