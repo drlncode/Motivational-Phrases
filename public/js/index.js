@@ -25,6 +25,5 @@ constants.toPauseBtn.addEventListener('click', functions.deviceButton);
 constants.changeLangBtn.addEventListener('click', functions.changeLang);
 
 // Event listeners for pc "button".
-document.addEventListener('keydown', functions.setPause);
-
-document.addEventListener('keyup', functions.setPlay);
+document.addEventListener('keydown', functions.setPauseOrPlay);
+document.addEventListener('keyup', functions.setPauseOrPlay);

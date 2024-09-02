@@ -37,12 +37,17 @@ export function changePhraseAndManageProgressBar() {
     }, 50);
 }
 
-export function setPlay(e) {
-    if (e.key === 's') variables.progressBarIsPaused = false;
-}
+export function setPauseOrPlay(e) {
+    if (!(e.type !== variables.lastType)) return;
 
-export function setPause(e) {
-    if (e.key === 's') variables.progressBarIsPaused = true;
+    if (e.key === 's') variables.progressBarIsPaused =
+        !variables.progressBarIsPaused;
+
+    variables.lastType = e.type;
+
+    if (e.type === 'keyup' && variables.progressBarIsPaused === true) {
+        variables.progressBarIsPaused = false;
+    }
 }
 
 // The ones that allow everything to happen, are nothing out of this world.
@@ -118,8 +123,7 @@ export default {
     updatePhrase,
     nextPhrase,
     changeLang,
-    setPause,
-    setPlay,
+    setPauseOrPlay,
     changePhraseAndManageProgressBar,
     setLang
 }
