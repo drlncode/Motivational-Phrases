@@ -3,7 +3,8 @@ export const getPhrases = async ({ url }) => {
 
     try {
         const response = await fetch(url);
-        const phrases = await response.json();
+        const json = await response.json();
+        const phrases = JSON.parse(json);
 
         result = {
             success: true,
