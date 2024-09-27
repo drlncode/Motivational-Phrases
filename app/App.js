@@ -6,8 +6,6 @@ import { staticFiles } from './routes/static.route.js';
 
 const app = express();
 
-console.log(__dirname);
-
 app.get('/', (req, res) => {
     const indexFile = path.join(__dirname, '../../public', 'index.html');
     res.sendFile(indexFile);
@@ -27,7 +25,7 @@ app.get('/phrases', async (req, res) => {
 });
 
 // app.use(express.static()) dont work in production, idk why.
-app.get('/public', staticFiles);
+app.use('/public', staticFiles);
 
 app.use((req, res) => {
     res.status(404).send('404 Not Found.');
