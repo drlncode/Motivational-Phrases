@@ -1,8 +1,9 @@
 import express from 'express';
 import path from 'node:path';
-import { readFile } from 'node:fs/promises';
 import { __dirname } from './utils/dirname.js';
-import { staticFiles } from './routes/static.route.js';
+import { phrasesRouter } from './routes/phrases.router.js';
+import { staticFilesRouter } from './routes/static.router.js';
+import { nf404Middleware } from './middlewares/nf404.middleware.js';
 
 const app = express();
 
@@ -11,24 +12,12 @@ app.get('/', (req, res) => {
     res.sendFile(indexFile);
 });
 
-app.get('/phrases', async (req, res) => {
-    res.setHeader('Access-Control-Allow-Origin', '*');
-
-    try {
-        const data = await readFile(`${__dirname}/data/phrases.json`, 'utf-8');
-        res.setHeader('Content-Type', 'application/json');
-        res.send(data);
-    } catch (error) {
-        res.status(500).send('500 - Internal Server Error');
-        console.log(error);
-    }
-});
-
+// Routes.
+app.use('/phrases', phrasesRouter);
 // app.use(express.static()) dont work in production, idk why.
-app.use('/public', staticFiles);
+app.use('/public', staticFilesRouter);
 
-app.use((req, res) => {
-    res.status(404).send('404 Not Found.');
-});
+// Not found middleware.
+app.use(nf404Middleware);
 
 export default app;
