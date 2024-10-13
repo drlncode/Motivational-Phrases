@@ -3,15 +3,15 @@ export const getPhrases = async ({ url }) => {
 
     try {
         const response = await fetch(url);
-        const json = await response.json();
-        const phrases = JSON.parse(json);
+        const phrases = await response.json();
 
         result = {
             success: true,
             data: phrases
         };
-    } catch (e) {
-        if (e) {
+    } catch (error) {
+        if (error) {
+            console.error('Error while getting phrases:', error);
             result = {
                 success: false,
                 data: null
