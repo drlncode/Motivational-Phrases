@@ -1,0 +1,17 @@
+{
+  "name": "motivational-phrases",
+  "version": "0.0.1",
+  "description": "Simple app to generate motivational phrases from a local Mini-API made with ExpressJS.",
+  "scripts": {},
+  "keywords": [
+    "api",
+    "motivational",
+    "phrases"
+  ],
+  "author": "Darlin Daniel Arias Méndez",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "22.10.2",
+    "typescript": "5.7.2"
+  }
+}
