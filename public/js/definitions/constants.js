@@ -5,8 +5,7 @@ export const toPauseBtn = document.querySelector('.controls');
 export const processBar = document.querySelector('.process');
 export const showPhrase = document.querySelector('.text');
 
-const URL = 'https://motivational-phrases-demo.vercel.app/phrases';
-export const { data: phrases } = await getPhrases({ url: URL });
+export const { data: phrases } = await getPhrases({ url: '/phrases' });
 
 export default {
     changeLangBtn,

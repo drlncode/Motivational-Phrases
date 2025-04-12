@@ -1,6 +1,4 @@
-import phrases from '../data/phrases.json' assert {
-    type: 'json'
-}
+import phrases from '../data/phrases.json' with { type: 'json' }
 
 export class PhrasesController {
     static async getPhrases(req, res) {
