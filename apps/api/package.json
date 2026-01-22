@@ -1,0 +1,23 @@
+{
+  "name": "@apps/api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "packageManager": "pnpm@10.28.1",
+  "scripts": {
+    "start": "./dist/index.js",
+    "dev": "nodemon",
+    "lint": "tsc --noEmit",
+    "build": "tsc -b && tsc-alias && tsc-esm-fix"
+  },
+  "author": "Darlin Daniel Arias Méndez",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "25.0.10",
+    "nodemon": "3.1.11",
+    "tsc-alias": "1.8.16",
+    "tsc-esm-fix": "3.1.2",
+    "tsx": "4.21.0",
+    "typescript": "5.9.3"
+  }
+}

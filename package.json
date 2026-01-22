@@ -1,17 +1,25 @@
 {
   "name": "motivational-phrases",
   "version": "0.0.1",
-  "description": "Simple app to generate motivational phrases from a local Mini-API made with ExpressJS.",
-  "scripts": {},
+  "packageManager": "pnpm@10.28.1",
+  "description": "Monorepo for show motivational phrases.",
+  "scripts": {
+    "dev": "pnpm -r dev",
+    "build": "pnpm -r build",
+    "build-types": "pnpm --filter @shared/types build",
+    "install-types": "pnpm add @shared/types --filter @apps/api && pnpm add @shared/types --filter @apps/web",
+    "tests": "pnpm -r test"
+  },
+  "pnpm": {
+    "overrides": {
+      "vite": "npm:rolldown-vite@7.2.5"
+    }
+  },
   "keywords": [
     "api",
     "motivational",
     "phrases"
   ],
   "author": "Darlin Daniel Arias Méndez",
-  "license": "MIT",
-  "devDependencies": {
-    "@types/node": "22.10.2",
-    "typescript": "5.7.2"
-  }
+  "license": "MIT"
 }
